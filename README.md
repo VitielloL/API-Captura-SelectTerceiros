@@ -49,25 +49,21 @@ node index.js
 ## Customização
 **Modo Headless:** Por padrão, o navegador abre para que você possa ver as ações. Para rodar em segundo plano (modo headless), altere a linha:
 ```bash
-javascript
 const browser = await puppeteer.launch({ headless: false });
 ```
 
 para:
 ```bash
-javascript
 const browser = await puppeteer.launch({ headless: true });
 ```
 
 **Tempo de Espera:** Caso precise ajustar o tempo de espera entre as interações, você pode alterar os valores nos comandos setTimeout:
 
 ```bash
-javascript
 await new Promise(resolve => setTimeout(resolve, 3000));
 ```
 **Itens e Limites de Preço:** Para adicionar novos itens ou modificar os existentes, basta incluir/alterar as chamadas da função fetchData:
 
 ```bash
-javascript
 fetchData('Nome do Item', LimiteDePreço)
 ```
