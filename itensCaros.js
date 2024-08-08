@@ -52,7 +52,7 @@ const fetchData = async (itemName, priceLimit) => {
       shurikenHuumaCorrompida,
       mascaraDeOni,
     ] = await Promise.all([
-      fetchData('Shuriken Huuma Corrompida', 150000000),
+      fetchData('Shuriken Huuma Corrompida', 100000000),
       fetchData('Máscara de Oni', 28000000),
     ]);
     console.log('Shuriken Huuma Corrompida Results:', shurikenHuumaCorrompida);
