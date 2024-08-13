@@ -65,7 +65,7 @@ const fetchData = async (itemName, priceLimit) => {
     console.log('Erva Branca Results:', ervaBrancaResults);
     console.log('Trevo Marca Páginas Results:', trevoMarcaPaginasResults);
     console.log('Mastela Results:', mastela);
-    console.log('abela de Pesquisa Manchada:', tabela);
+    console.log('Tabela de Pesquisa Manchada:', tabela);
   } catch (error) {
     console.error('Error:', error);
   }
