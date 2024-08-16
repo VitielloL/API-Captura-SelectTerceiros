@@ -9,28 +9,43 @@ const fetchData = async (itemName, priceLimit) => {
   await page.waitForSelector('input[type="text"]');
   await page.type('input[type="text"]', itemName);
 
+  // Aguardar 3 segundos após digitar o nome do item
   await new Promise(resolve => setTimeout(resolve, 3000));
 
+  // Clicar no botão de busca
   await page.click('.flex.items-center.justify-center.gap-2');
 
+  // Aguardar 3 segundos para que os resultados carreguem
   await new Promise(resolve => setTimeout(resolve, 3000));
 
   const results = await page.evaluate((itemName, priceLimit) => {
     const rows = document.querySelectorAll('tbody > tr');
+    console.log(`Encontrado ${rows.length} resultados na busca para: ${itemName}`); // Verificar quantas linhas foram encontradas
+
     return Array.from(rows).map(row => {
       const columns = row.querySelectorAll('td');
-      const priceText = columns[2].innerText.trim();
-      
+
+      if (columns.length === 0) {
+        console.warn('Nenhuma coluna encontrada nesta linha. Pulando para a próxima.');
+        return null;
+      }
+
+      const priceText = columns[2]?.innerText.trim(); // Verificar se o elemento existe antes de acessar
+      if (!priceText) {
+        console.warn('Preço não encontrado para uma linha. Pulando para a próxima.');
+        return null;
+      }
+
       // Remover pontos e substituir vírgulas por pontos para conversão
       const price = parseFloat(priceText.replace(/\./g, '').replace(',', '.'));
 
       return {
-        item: columns[0].innerText.trim(),
-        quantity: columns[1].innerText.trim(),
+        item: columns[0]?.innerText.trim() || 'N/A', // Verificar se o elemento existe antes de acessar
+        quantity: columns[1]?.innerText.trim() || 'N/A', // Verificar se o elemento existe antes de acessar
         price: priceText,
-        store: columns[3].innerText.trim()
+        store: columns[3]?.innerText.trim() || 'N/A' // Verificar se o elemento existe antes de acessar
       };
-    }).filter(result => result.item.includes(itemName))
+    }).filter(result => result && result.item.includes(itemName))
       .filter(result => {
         const priceNumber = parseFloat(result.price.replace(/\./g, '').replace(',', '.'));
         return priceNumber < priceLimit;

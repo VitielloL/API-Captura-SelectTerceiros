@@ -54,18 +54,21 @@ const fetchData = async (itemName, priceLimit) => {
         trevoMarcaPaginasResults,
         mastela,
         tabela,
+        mithril
     ] = await Promise.all([
         fetchData('Erva Azul', 1200),
         fetchData('Erva Branca', 800),
         fetchData('Trevo Marca Páginas', 1860),
         fetchData('Mastela', 1450),
         fetchData('Tabela de Pesquisa Manchada', 250),
+        fetchData('Minério de Mithril', 1000000),
     ]);
     console.log('Erva Azul Results:', ervaAzulResults);
     console.log('Erva Branca Results:', ervaBrancaResults);
     console.log('Trevo Marca Páginas Results:', trevoMarcaPaginasResults);
     console.log('Mastela Results:', mastela);
     console.log('Tabela de Pesquisa Manchada:', tabela);
+    console.log('Minério de Mithril:', mithril);
   } catch (error) {
     console.error('Error:', error);
   }
