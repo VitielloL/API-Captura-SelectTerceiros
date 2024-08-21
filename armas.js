@@ -48,20 +48,17 @@ const fetchData = async (itemName, priceLimit) => {
 
 (async () => {
   try {
-    const bandagensLimpasResults = await fetchData('Bandagens Limpas', 110000);
-    console.log('Bandagens Limpas Results:', bandagensLimpasResults);
-
     const acoIgneoResults = await fetchData('Aço Ígneo', 110000);
     console.log('Aço Ígneo Results:', acoIgneoResults);
 
     const arcoDemoniacoResults = await fetchData('Arco Demoniaco', 220000);
     console.log('Arco Demoniaco Results:', arcoDemoniacoResults);
 
-    const pilares = await fetchData('Pilares', 220000);
-    console.log('Pilares:', pilares);
-
     const arcoMisticoResults = await fetchData('Arco Mistico', 110000);
     console.log('Arco Místico Results:', arcoMisticoResults);
+
+    const bandagensLimpasResults = await fetchData('Bandagens Limpas', 110000);
+    console.log('Bandagens Limpas Results:', bandagensLimpasResults);
 
     const bastaoAberracaoResults = await fetchData('Bastão da Aberração', 445000);
     console.log('Bastão da Aberração Results:', bastaoAberracaoResults);
@@ -98,6 +95,9 @@ const fetchData = async (itemName, priceLimit) => {
 
     const microfoneFloralIguResults = await fetchData('Microfone Floral de Igu', 110000);
     console.log('Microfone Floral de Igu Results:', microfoneFloralIguResults);
+
+    const pilares = await fetchData('Pilares', 220000);
+    console.log('Pilares:', pilares);
 
     const rosaLabaredaResults = await fetchData('Rosa Labareda', 110000);
     console.log('Rosa Labareda Results:', rosaLabaredaResults);
