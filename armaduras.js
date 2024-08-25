@@ -63,6 +63,9 @@ const fetchData = async (itemName, priceLimit) => {
 
 (async () => {
   try {
+    const armaduraDaNobreza = await fetchData('Armadura da Nobreza', 220000);
+    console.log('Armadura da Nobreza:', armaduraDaNobreza);
+    
     const anelDeBradium = await fetchData('Anel de Bradium', 110000);
     console.log('Anel de Bradium Results:', anelDeBradium);
 

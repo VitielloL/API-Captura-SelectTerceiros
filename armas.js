@@ -51,6 +51,9 @@ const fetchData = async (itemName, priceLimit) => {
     const acoIgneoResults = await fetchData('Aço Ígneo', 110000);
     console.log('Aço Ígneo Results:', acoIgneoResults);
 
+    const adagaDoPerseguidor = await fetchData('Adaga do Perseguidor', 220000);
+    console.log('Adaga do Perseguidor:', adagaDoPerseguidor);
+
     const arcoDemoniacoResults = await fetchData('Arco Demoniaco', 220000);
     console.log('Arco Demoniaco Results:', arcoDemoniacoResults);
 
