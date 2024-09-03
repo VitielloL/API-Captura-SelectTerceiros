@@ -54,7 +54,7 @@ const fetchData = async (itemName, priceLimit) => {
     const elunium = await fetchData('Elunium', 658);
     console.log('Elunium:', elunium);
 
-    const ervaAzulResults = await fetchData('Erva Azul', 1100);
+    const ervaAzulResults = await fetchData('Erva Azul', 1000);
     console.log('Erva Azul Results:', ervaAzulResults);
 
     const ervaBrancaResults = await fetchData('Erva Branca', 900);
