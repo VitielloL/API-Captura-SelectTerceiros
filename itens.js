@@ -48,19 +48,19 @@ const fetchData = async (itemName, priceLimit) => {
 
 (async () => {
   try {
-    const areiaResults = await fetchData('Areia Estrelar de Bruxa', 1100);
+    const areiaResults = await fetchData('Areia Estrelar de Bruxa', 999);
     console.log('Areia Estrelar de Bruxa Results:', areiaResults);
 
-    const elunium = await fetchData('Elunium', 658);
+    const elunium = await fetchData('Elunium', 657);
     console.log('Elunium:', elunium);
 
-    const ervaAzulResults = await fetchData('Erva Azul', 1000);
+    const ervaAzulResults = await fetchData('Erva Azul', 999);
     console.log('Erva Azul Results:', ervaAzulResults);
 
-    const ervaBrancaResults = await fetchData('Erva Branca', 900);
+    const ervaBrancaResults = await fetchData('Erva Branca', 899);
     console.log('Erva Branca Results:', ervaBrancaResults);
 
-    const mastelaResults = await fetchData('Mastela', 1450);
+    const mastelaResults = await fetchData('Mastela', 1449);
     console.log('Mastela Results:', mastelaResults);
 
     const mithrilResults = await fetchData('Minério de Mythril', 50000);
@@ -69,7 +69,7 @@ const fetchData = async (itemName, priceLimit) => {
     const tabelaResults = await fetchData('Tabela de Pesquisa Manchada', 250);
     console.log('Tabela de Pesquisa Manchada Results:', tabelaResults);
 
-    const trevoMarcaPaginasResults = await fetchData('Trevo Marca Páginas', 1860);
+    const trevoMarcaPaginasResults = await fetchData('Trevo Marca Páginas', 1859);
     console.log('Trevo Marca Páginas Results:', trevoMarcaPaginasResults);
 
   } catch (error) {
