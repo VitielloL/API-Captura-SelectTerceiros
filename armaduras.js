@@ -72,6 +72,9 @@ const fetchData = async (itemName, priceLimit) => {
     const anelNovoOz = await fetchData('Anel do Novo Oz', 220000);
     console.log('Anel do Novo Oz Results:', anelNovoOz);
 
+    const anelSombrio = await fetchData('Anel Sombrio', 220000);
+    console.log('Anel do Novo Oz Results:', anelSombrio);
+
     const batinaDoClero = await fetchData('Batina do Clero', 165000);
     console.log('Batina do Clero Results:', batinaDoClero);
 
