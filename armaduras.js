@@ -73,7 +73,7 @@ const fetchData = async (itemName, priceLimit) => {
     console.log('Anel do Novo Oz Results:', anelNovoOz);
 
     const anelSombrio = await fetchData('Anel Sombrio', 220000);
-    console.log('Anel do Novo Oz Results:', anelSombrio);
+    console.log('Anel Sombrio Results:', anelSombrio);
 
     const batinaDoClero = await fetchData('Batina do Clero', 165000);
     console.log('Batina do Clero Results:', batinaDoClero);
@@ -89,6 +89,9 @@ const fetchData = async (itemName, priceLimit) => {
 
     const braceleteFloralIgu = await fetchData('Bracelete Floral de Igu', 220000);
     console.log('Bracelete Floral de Igu Results:', braceleteFloralIgu);
+
+    const braceleteMorp = await fetchData('Bracelete de Morpheus Ilusional', 220000);
+    console.log('Bracelete de Morpheus Ilusional Results:', braceleteMorp);
 
     const brincoDeBradium = await fetchData('Brinco de Bradium', 110000);
     console.log('Brinco de Bradium Results:', brincoDeBradium);
@@ -110,6 +113,9 @@ const fetchData = async (itemName, priceLimit) => {
 
     const escudoCeruleo = await fetchData('Escudo Cerúleo', 55000);
     console.log('Escudo Cerúleo Results:', escudoCeruleo);
+
+    const escudoGigantes = await fetchData('Escudo Gigante', 445000);
+    console.log('Escudo Gigante Results:', escudoGigantes);
 
     const lampiaoDasTrevas = await fetchData('Lampião das Trevas', 110000);
     console.log('Lampião das Trevas Results:', lampiaoDasTrevas);
