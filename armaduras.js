@@ -146,6 +146,9 @@ const fetchData = async (itemName, priceLimit) => {
 
     const sapatosCeruleos = await fetchData('Sapatos Cerúleos', 55000);
     console.log('Sapatos Cerúleos Results:', sapatosCeruleos);
+
+    const veuDeMorpheus = await fetchData('Véu de Morpheus Ilusional', 220000);
+    console.log('Véu de Morpheus Ilusional Results:', veuDeMorpheus);
   } catch (error) {
     console.error('Error:', error);
   }

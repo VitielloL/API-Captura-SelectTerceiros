@@ -48,20 +48,20 @@ const fetchData = async (itemName, priceLimit) => {
 
 (async () => {
   try {
-    const areiaResults = await fetchData('Areia Estrelar de Bruxa', 599);
+    const areiaResults = await fetchData('Areia Estrelar de Bruxa', 499);
     console.log('Areia Estrelar de Bruxa Results:', areiaResults);
 
     const elunium = await fetchData('Elunium', 657);
     console.log('Elunium:', elunium);
 
-    // const ervaAzulResults = await fetchData('Erva Azul', 999);
-    // console.log('Erva Azul Results:', ervaAzulResults);
+    const ervaAzulResults = await fetchData('Erva Azul', 699);
+    console.log('Erva Azul Results:', ervaAzulResults);
 
-    const ervaBrancaResults = await fetchData('Erva Branca', 899);
+    const ervaBrancaResults = await fetchData('Erva Branca', 849);
     console.log('Erva Branca Results:', ervaBrancaResults);
 
-    const mastelaResults = await fetchData('Mastela', 1449);
-    console.log('Mastela Results:', mastelaResults);
+    // const mastelaResults = await fetchData('Mastela', 1449);
+    // console.log('Mastela Results:', mastelaResults);
 
     const mithrilResults = await fetchData('Minério de Mythril', 50000);
     console.log('Minério de Mythril Results:', mithrilResults);
