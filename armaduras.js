@@ -108,6 +108,9 @@ const fetchData = async (itemName, priceLimit) => {
     const coleteDragao = await fetchData('Colete do Dragão', 55000);
     console.log('Colete do Dragão Results:', coleteDragao);
 
+    const elmogigante = await fetchData('Elmo Gigante', 445000);
+    console.log('Elmo Gigante:', elmogigante);
+
     const egideDaNobreza = await fetchData('Égide da Nobreza', 430000);
     console.log('Égide da Nobreza Results:', egideDaNobreza);
 
@@ -140,6 +143,9 @@ const fetchData = async (itemName, priceLimit) => {
 
     const rosarioPreto = await fetchData('Rosário Preto', 110000);
     console.log('Rosário Preto Results:', rosarioPreto);
+
+    const rosarioDaGuardaReal = await fetchData('Rosário da Guarda Real', 220000);
+    console.log('Rosário da Guarda Real Results:', rosarioDaGuardaReal);
 
     const saltosRainhaScaraba = await fetchData('Saltos da Rainha Scaraba', 110000);
     console.log('Saltos da Rainha Scaraba Results:', saltosRainhaScaraba);
