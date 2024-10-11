@@ -48,8 +48,8 @@ const fetchData = async (itemName, priceLimit) => {
 
 (async () => {
   try {
-    const acoIgneoResults = await fetchData('Aço Ígneo', 110000);
-    console.log('Aço Ígneo Results:', acoIgneoResults);
+    // const acoIgneoResults = await fetchData('Aço Ígneo', 110000);
+    // console.log('Aço Ígneo Results:', acoIgneoResults);
 
     const adagaDoPerseguidor = await fetchData('Adaga do Perseguidor', 220000);
     console.log('Adaga do Perseguidor:', adagaDoPerseguidor);
@@ -65,6 +65,9 @@ const fetchData = async (itemName, priceLimit) => {
 
     const bastaoAberracaoResults = await fetchData('Bastão da Aberração', 445000);
     console.log('Bastão da Aberração Results:', bastaoAberracaoResults);
+    
+    const bazerald = await fetchData('Bazerald Ilu', 1100000);
+    console.log('Bazerald Ilu:', bazerald);
 
     const espadaCromadaResults = await fetchData('Espada Cromada de duas mãos', 110000);
     console.log('Espada Cromada de duas mãos Results:', espadaCromadaResults);
@@ -81,6 +84,9 @@ const fetchData = async (itemName, priceLimit) => {
     const katarPetaPurpuraResults = await fetchData('Katar da Pétala Purpura', 110000);
     console.log('Katar da Pétala Purpura Results:', katarPetaPurpuraResults);
 
+    const laminaDosCeus = await fetchData('Lâmina dos Céus', 840000);
+    console.log('Lâmina dos Céus Results:', laminaDosCeus);
+
     const laminaGemeaAzulResults = await fetchData('Lâmina Gêmea Azul', 445000);
     console.log('Lâmina Gêmea Azul Results:', laminaGemeaAzulResults);
 
@@ -90,8 +96,8 @@ const fetchData = async (itemName, priceLimit) => {
     const lancagiganteResults = await fetchData('Lança Gigante', 445000);
     console.log('Lança Gigante Results:', lancagiganteResults);
 
-    const manjubaResults = await fetchData('Manjuba', 110000);
-    console.log('Manjuba Results:', manjubaResults);
+    // const manjubaResults = await fetchData('Manjuba', 110000);
+    // console.log('Manjuba Results:', manjubaResults);
 
     const marteloVeteranoResults = await fetchData('Martelo Veterano', 110000);
     console.log('Martelo Veterano Results:', marteloVeteranoResults);
