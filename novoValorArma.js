@@ -47,6 +47,7 @@ const fetchData = async (itemName, priceLimit) => {
 };
 
 // 700000 = 200 moedas
+// 525000 = 150 moedas
 // 365000 = 100 moedas
 // 310000 = 84 moedas
 // 280000 = 80 moedas
