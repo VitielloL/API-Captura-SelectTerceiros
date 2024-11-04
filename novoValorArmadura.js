@@ -65,6 +65,7 @@ const fetchData = async (itemName, priceLimit) => {
 // 365000 = 100 moedas
 // 310000 = 84 moedas
 // 280000 = 80 moedas
+// 175000 = 50 moedas
 // 140000 = 40 moedas
 // 70000 = 20 moedas
 // 35000 = 10 moedas
@@ -115,6 +116,9 @@ const fetchData = async (itemName, priceLimit) => {
 
     const coleteDragao = await fetchData('Colete do Dragão', 35000);
     console.log('Colete do Dragão Results:', coleteDragao);
+
+    const couracaAgua = await fetchData('Couraça da Submissão Oceânica', 175000);
+    console.log('Couraça da Submissão Oceânica Results:', couracaAgua);
 
     const elmogigante = await fetchData('Elmo Gigante', 280000);
     console.log('Elmo Gigante:', elmogigante);
