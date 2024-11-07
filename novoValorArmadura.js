@@ -62,6 +62,7 @@ const fetchData = async (itemName, priceLimit) => {
 };
 
 // 700000 = 200 moedas
+// 525000 = 150 moedas
 // 365000 = 100 moedas
 // 310000 = 84 moedas
 // 280000 = 80 moedas
@@ -96,6 +97,9 @@ const fetchData = async (itemName, priceLimit) => {
     const botasGigantes = await fetchData('Botas Gigantes', 280000);
     console.log('Botas Gigantes Results:', botasGigantes);
 
+    const botasVeteranas = await fetchData('Botas Vet', 525000);
+    console.log('Botas Vet Results:', botasVeteranas);
+
     const braceleteFloralIgu = await fetchData('Bracelete Floral de Igu', 140000);
     console.log('Bracelete Floral de Igu Results:', braceleteFloralIgu);
 
@@ -117,7 +121,7 @@ const fetchData = async (itemName, priceLimit) => {
     const coleteDragao = await fetchData('Colete do Dragão', 35000);
     console.log('Colete do Dragão Results:', coleteDragao);
 
-    const couracaAgua = await fetchData('Couraça da Submissão Oceânica', 175000);
+    const couracaAgua = await fetchData('Couraca da Sub', 175000);
     console.log('Couraça da Submissão Oceânica Results:', couracaAgua);
 
     const elmogigante = await fetchData('Elmo Gigante', 280000);
