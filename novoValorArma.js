@@ -48,6 +48,7 @@ const fetchData = async (itemName, priceLimit) => {
 
 // 700000 = 200 moedas
 // 525000 = 150 moedas
+// 420000 = 120 moedas
 // 365000 = 100 moedas
 // 310000 = 84 moedas
 // 280000 = 80 moedas
@@ -65,6 +66,9 @@ const fetchData = async (itemName, priceLimit) => {
 
     const arcoDemoniacoResults = await fetchData('Arco Demoniaco', 140000);
     console.log('Arco Demoniaco Results:', arcoDemoniacoResults);
+
+    const arcoGigante = await fetchData('Arco Gigante', 280000);
+    console.log('Arco Gigante Results:', arcoGigante);
 
     const arcoMisticoResults = await fetchData('Arco Mistico', 70000);
     console.log('Arco Místico Results:', arcoMisticoResults);

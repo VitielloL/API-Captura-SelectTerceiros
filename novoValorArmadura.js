@@ -63,6 +63,7 @@ const fetchData = async (itemName, priceLimit) => {
 
 // 700000 = 200 moedas
 // 525000 = 150 moedas
+// 420000 = 120 moedas
 // 365000 = 100 moedas
 // 310000 = 84 moedas
 // 280000 = 80 moedas
@@ -171,6 +172,9 @@ const fetchData = async (itemName, priceLimit) => {
 
     const sapatosCeruleos = await fetchData('Sapatos Cerúleos', 35000);
     console.log('Sapatos Cerúleos Results:', sapatosCeruleos);
+
+    const vestigiosDeOdin = await fetchData('Vestígio de Odin', 420000);
+    console.log('Vestígio de Odin Results:', vestigiosDeOdin);
 
     const veuDeMorpheus = await fetchData('Véu de Morpheus Ilusional', 140000);
     console.log('Véu de Morpheus Ilusional Results:', veuDeMorpheus);
