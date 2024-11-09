@@ -80,6 +80,9 @@ const fetchData = async (itemName, priceLimit) => {
     const anelDeBradium = await fetchData('Anel de Bradium', 70000);
     console.log('Anel de Bradium Results:', anelDeBradium);
 
+    const anelDeAmetista = await fetchData('Anel de Ametista', 140000);
+    console.log('Anel de Ametista Results:', anelDeAmetista);
+
     const anelNovoOz = await fetchData('Anel do Novo Oz', 140000);
     console.log('Anel do Novo Oz Results:', anelNovoOz);
 
@@ -113,8 +116,17 @@ const fetchData = async (itemName, priceLimit) => {
     const chapeuGuardaReal = await fetchData('Chapéu da Guarda Real', 365000);
     console.log('Chapéu da Guarda Real Results:', chapeuGuardaReal);
 
+    const chipQuebrado01 = await fetchData('Chip Quebrado 01', 70000);
+    console.log('Chip Quebrado 01 Results:', chipQuebrado01);
+
     const chipQuebrado02 = await fetchData('Chip Quebrado 02', 70000);
     console.log('Chip Quebrado 02 Results:', chipQuebrado02);
+
+    const chipQuebrado03 = await fetchData('Chip Quebrado 03', 70000);
+    console.log('Chip Quebrado 03 Results:', chipQuebrado03);
+
+    const chipDeDados = await fetchData('Chip de Dados 03', 525000);
+    console.log('Chip de Dados 03 Results:', chipDeDados);
 
     const colarDeBradium = await fetchData('Colar de Bradium', 70000);
     console.log('Colar de Bradium Results:', colarDeBradium);
@@ -172,6 +184,9 @@ const fetchData = async (itemName, priceLimit) => {
 
     const sapatosCeruleos = await fetchData('Sapatos Cerúleos', 35000);
     console.log('Sapatos Cerúleos Results:', sapatosCeruleos);
+
+    const sobretudoDoMaestro = await fetchData('Sobretudo do Maestro', 700000);
+    console.log('Sobretudo do Maestro Results:', sobretudoDoMaestro);
 
     const vestigiosDeOdin = await fetchData('Vestígio de Odin', 420000);
     console.log('Vestígio de Odin Results:', vestigiosDeOdin);
