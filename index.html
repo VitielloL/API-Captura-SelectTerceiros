@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Itens e Valores</title>
+    <link rel="shortcut icon" href="assets/iconzeny.webp" type="image/x-icon">
+    <!-- Link do Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            color: #4c6d80;
+        }
+        h6 {
+            text-align: center;
+            color: #4c6d80;
+            margin-bottom: 20px;
+        }
+        .table-container {
+            margin-top: 30px;
+        }
+        th {
+            background-color: #007bff;
+            color: #4c6d80;
+        }
+        td {
+            background-color: #ffffff;
+        }
+        .search-bar {
+            text-align: center;
+        }
+        #logo {
+            display: block;
+            margin: 0 auto 20px;
+            max-width: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Espaço para a logo -->
+        <img src="assets/logo.jpg" style="border-radius: 50%; width: 100px; height: 100px;" alt="Logo" id="logo">
+
+        <h1>Lista de Itens e Valores</h1>
+
+        <h6>Valores baseado em preço minimo de venda do enriquecido em 4kk800</h4>
+
+        <!-- Campo de busca -->
+        <div class="search-bar">
+            <input type="text" id="searchInput" class="form-control" placeholder="Digite para buscar um item..." onkeyup="filterTable()">
+        </div>
+
+        <div class="table-container">
+            <table class="table table-bordered table-striped" id="itemsTable">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Item</th>
+                        <th scope="col">Preço Aproximado</th>
+                        <th scope="col">Moedas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td>Aço Ígneo</td>
+                        <td>70.000</td>
+                        <td>20 moedas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Adaga do Perseguidor</td>
+                        <td>140.000</td>
+                        <td>40 moedas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Anel de Ametista</td>
+                        <td>140.000</td>
+                        <td>40 moedas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Anel de Bradium</td>
+                        <td>70.000</td>
+                        <td>20 moedas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Anel do Novo Oz</td>
+                        <td>140.000</td>
+                        <td>40 moedas</td>
+                    </tr>
+                    
+                    <tr>
+                        <td></td>
+                        <td>Anel Sombrio</td>
+                        <td>140.000</td>
+                        <td>40 moedas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Arco Demoníaco</td>
+                        <td>140.000</td>
+                        <td>40 moedas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Arco Gigante</td>
+                        <td>280.000</td>
+                        <td>80 moedas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Arco Místico</td>
+                        <td>70.000</td>
+                        <td>20 moedas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Armadura da Nobreza</td>
+                        <td>140.000</td>
+                        <td>40 moedas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Bandagens Limpas</td>
+                        <td>70.000</td>
+                        <td>20 moedas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Bastão da Aberração</td>
+                        <td>280.000</td>
+                        <td>80 moedas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Batina do Clero</td>
+                        <td>110.000</td>
+                        <td>35 moedas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Bazerald Ilu</td>
+                        <td>700.000</td>
+                        <td>200 moedas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Bíblia de Exorcismo</td>
+                        <td>70.000</td>
+                        <td>20 moedas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Botas do Clero</td>
+                        <td>35.000</td>
+                        <td>10 moedas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Botas Gigantes</td>
+                        <td>280.000</td>
+                        <td>80 moedas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Botas Veteranas</td>
+                        <td>525.000</td>
+                        <td>150 moedas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Bracelete de Morpheus Ilusional</td>
+                        <td>140.000</td>
+                        <td>40 moedas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Bracelete Floral de Igu</td>
+                        <td>140.000</td>
+                        <td>40 moedas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Brinco de Bradium</td>
+                        <td>70.000</td>
+                        <td>20 moedas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Chapéu da Guarda Real</td>
+                        <td>365.000</td>
+                        <td>100 moedas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Chip de Dados</td>
+                        <td>525.000</td>
+                        <td>150 moedas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Chip Quebrado 01</td>
+                        <td>70.000</td>
+                        <td>20 moedas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Chip Quebrado 02</td>
+                        <td>70.000</td>
+                        <td>20 moedas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Chip Quebrado 03</td>
+                        <td>70.000</td>
+                        <td>20 moedas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Colar de Bradium</td>
+                        <td>70.000</td>
+                        <td>20 moedas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Colete do Dragão</td>
+                        <td>35.000</td>
+                        <td>10 moedas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Couraça da Submissão Oceânica</td>
+                        <td>175.000</td>
+                        <td>50 moedas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Elmo Gigante</td>
+                        <td>280.000</td>
+                        <td>80 moedas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Égide da Nobreza</td>
+                        <td>310.000</td>
+                        <td>84 moedas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Escudo Cerúleo</td>
+                        <td>35.000</td>
+                        <td>10 moedas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Espada Cromada de Duas Mãos</td>
+                        <td>70.000</td>
+                        <td>20 moedas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Espada Veterana</td>
+                        <td>35.000</td>
+                        <td>10 moedas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Gládio da Nobreza</td>
+                        <td>280.000</td>
+                        <td>80 moedas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Guarda-Chuva Antiquado</td>
+                        <td>70.000</td>
+                        <td>20 moedas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Kandura</td>
+                        <td>52.500</td>
+                        <td>15 moedas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Katar da Pétala Púrpura</td>
+                        <td>70.000</td>
+                        <td>20 moedas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Lâmina dos Céus</td>
+                        <td>525.000</td>
+                        <td>150 moedas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Lâmina Gêmea Azul</td>
+                        <td>280.000</td>
+                        <td>80 moedas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Lâmina Gêmea Vermelha</td>
+                        <td>280.000</td>
+                        <td>80 moedas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Lampião das Trevas</td>
+                        <td>70.000</td>
+                        <td>20 moedas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Lança Gigante</td>
+                        <td>280.000</td>
+                        <td>80 moedas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Luva de Bradium</td>
+                        <td>70.000</td>
+                        <td>20 moedas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Manjuba</td>
+                        <td>70.000</td>
+                        <td>20 moedas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Manteau de Chamas de Naght Sieger</td>
+                        <td>140.000</td>
+                        <td>40 moedas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Manteau do Clero</td>
+                        <td>140.000</td>
+                        <td>40 moedas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Manteau do Dragão</td>
+                        <td>35.000</td>
+                        <td>10 moedas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Manto Cerúleo</td>
+                        <td>35.000</td>
+                        <td>10 moedas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Martelo Veterano</td>
+                        <td>70.000</td>
+                        <td>20 moedas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Máscara do Mergulho</td>
+                        <td>70.000</td>
+                        <td>20 moedas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Máscara Sinistra</td>
+                        <td>140.000</td>
+                        <td>40 moedas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Moeda de Prata</td>
+                        <td>700.000</td>
+                        <td>200 moedas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Orbe do Apocalipse</td>
+                        <td>700.000</td>
+                        <td>200 moedas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Ornamento Cerúleo</td>
+                        <td>35.000</td>
+                        <td>10 moedas</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Scripts Bootstrap JS e JavaScript para filtro da tabela -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        // Adiciona a numeração na coluna "ID"
+        const table = document.querySelector("#itemsTable tbody");
+        const rows = table.querySelectorAll("tr");
+        rows.forEach((row, index) => {
+            row.cells[0].textContent = (index + 1).toString().padStart(2, "0");
+        });
+
+        function filterTable() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("searchInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("itemsTable");
+            tr = table.getElementsByTagName("tr");
+
+            // Loop through all table rows and hide those that don't match the search query
+            for (i = 1; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td");
+                if (td) {
+                    var matchFound = false;
+                    for (var j = 0; j < td.length; j++) {
+                        if (td[j].textContent || td[j].innerText) {
+                            txtValue = td[j].textContent || td[j].innerText;
+                            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                                matchFound = true;
+                            }
+                        }
+                    }
+                    tr[i].style.display = matchFound ? "" : "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
