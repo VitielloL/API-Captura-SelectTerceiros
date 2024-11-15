@@ -114,6 +114,9 @@ const fetchData = async (itemName, priceLimit) => {
     const brincoDeBradium = await fetchData('Brinco de Bradium', 70000);
     console.log('Brinco de Bradium Results:', brincoDeBradium);
 
+    const capaDoSobrevivente = await fetchData('Capa do Sobrevivente', 420000);
+    console.log('Capa do Sobrevivente Results:', capaDoSobrevivente);
+
     const chapeuGuardaReal = await fetchData('Chapéu da Guarda Real', 365000);
     console.log('Chapéu da Guarda Real Results:', chapeuGuardaReal);
 
