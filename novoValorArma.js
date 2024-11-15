@@ -54,6 +54,7 @@ const fetchData = async (itemName, priceLimit) => {
 // 280000 = 80 moedas
 // 140000 = 40 moedas
 // 70000 = 20 moedas
+// 52500 = 15 moedas
 // 35000 = 10 moedas
 
 (async () => {
