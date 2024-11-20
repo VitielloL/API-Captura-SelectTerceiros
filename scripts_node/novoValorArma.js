@@ -150,8 +150,8 @@ const fetchData = async (itemName, priceLimit) => {
     const shurikenDaNevasca = await fetchData('Shuriken da Nevasca', 700000);
     console.log('Shuriken da Nevasca Results (min 700k):', shurikenDaNevasca);
     
-    const tabulaIlusional = await fetchData('Tábula Ilusional Ilusional', 700000);
-    console.log('Tábula Ilusional Results (min 700k):', tabulaIlusional);
+    const tabulaIlusional = await fetchData('Tabula Ilusional', 700000);
+    console.log('Tabula Ilusional Results (min 700k):', tabulaIlusional);
     
     const taeGooLyeonIlusional = await fetchData('Tae Goo Lyeon Ilusional', 700000);
     console.log('Tae Goo Lyeon Ilusional Results (min 700k):', taeGooLyeonIlusional);

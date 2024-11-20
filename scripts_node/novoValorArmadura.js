@@ -148,7 +148,7 @@ const fetchData = async (itemName, priceLimit) => {
     const braceleteFloralIgu = await fetchData('Bracelete Floral de Igu', 140000);
     console.log('Bracelete Floral de Igu Results (min 140k):', braceleteFloralIgu);
 
-    const braceleteMorp = await fetchData('Bracelete de Morpheus Ilusional', 140000);
+    const braceleteMorp = await fetchData('Morpheus Ilusional', 140000);
     console.log('Bracelete de Morpheus Ilusional Results (min 140k):', braceleteMorp);
 
     const brincoDeBradium = await fetchData('Brinco de Bradium', 70000);
