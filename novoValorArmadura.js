@@ -96,7 +96,7 @@ const fetchData = async (itemName, priceLimit) => {
     const bibliaExorcismo = await fetchData('Bíblia de Exorcismo', 70000);
     console.log('Bíblia de Exorcismo Results:', bibliaExorcismo);
 
-    const botasDoClero = await fetchData('Botas do Clero', 35000);
+    const botasDoClero = await fetchData('Botas do Clero', 140000);
     console.log('Botas do Clero Results:', botasDoClero);
 
     const botasGigantes = await fetchData('Botas Gigantes', 280000);
