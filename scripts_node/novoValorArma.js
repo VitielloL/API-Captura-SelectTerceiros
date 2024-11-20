@@ -46,12 +46,16 @@ const fetchData = async (itemName, priceLimit) => {
   return results;
 };
 
+// 2100000 = 600 moedas
+// 1050000 = 300 moedas
 // 700000 = 200 moedas
+// 560000 = 160 moedas
 // 525000 = 150 moedas
 // 420000 = 120 moedas
 // 365000 = 100 moedas
 // 310000 = 84 moedas
 // 280000 = 80 moedas
+// 175000 = 50 moedas
 // 140000 = 40 moedas
 // 70000 = 20 moedas
 // 52500 = 15 moedas
@@ -65,6 +69,9 @@ const fetchData = async (itemName, priceLimit) => {
     const adagaDoPerseguidor = await fetchData('Adaga do Perseguidor', 140000);
     console.log('Adaga do Perseguidor:', adagaDoPerseguidor);
 
+    const arcoDeCaça = await fetchData('Arco de Caça Ilusional', 700000);
+    console.log('Arco de Caça Ilusional Results:', arcoDeCaça);
+
     const arcoDemoniacoResults = await fetchData('Arco Demoniaco', 140000);
     console.log('Arco Demoniaco Results:', arcoDemoniacoResults);
 
@@ -74,14 +81,23 @@ const fetchData = async (itemName, priceLimit) => {
     const arcoMisticoResults = await fetchData('Arco Mistico', 70000);
     console.log('Arco Místico Results:', arcoMisticoResults);
 
+    const balistaIlusional = await fetchData('Balista Ilusional', 700000);
+    console.log('Balista Ilusional Results:', balistaIlusional);
+
     const bandagensLimpasResults = await fetchData('Bandagens Limpas', 70000);
     console.log('Bandagens Limpas Results:', bandagensLimpasResults);
+
+    const bandagensLimpasIluResults = await fetchData('Bandagens Limpas Ilu', 700000);
+    console.log('Bandagens Limpas Ilu Results:', bandagensLimpasIluResults);
 
     const bastaoAberracaoResults = await fetchData('Bastão da Aberração', 280000);
     console.log('Bastão da Aberração Results:', bastaoAberracaoResults);
     
     const bazerald = await fetchData('Bazerald Ilu', 700000);
-    console.log('Bazerald Ilu:', bazerald);
+    console.log('Bazerald Ilu Results:', bazerald);
+
+    const brilhoDouradoIlusional = await fetchData('Brilho Dourado Ilusional', 2100000);
+    console.log('Brilho Dourado Ilusional Results:', brilhoDouradoIlusional);
 
     const espadaCromadaResults = await fetchData('Espada Cromada de duas mãos', 70000);
     console.log('Espada Cromada de duas mãos Results:', espadaCromadaResults);
@@ -110,6 +126,9 @@ const fetchData = async (itemName, priceLimit) => {
     const lancagiganteResults = await fetchData('Lança Gigante', 280000);
     console.log('Lança Gigante Results:', lancagiganteResults);
 
+    const luvaDeComboIlusional = await fetchData('Luva de Combo Ilusional', 700000 );
+    console.log('Luva de Combo Ilusional Results:', luvaDeComboIlusional);
+
     const manjubaResults = await fetchData('Manjuba', 70000);
     console.log('Manjuba Results:', manjubaResults);
 
@@ -127,6 +146,15 @@ const fetchData = async (itemName, priceLimit) => {
 
     const sabreSinoiteResults = await fetchData('Sabre Sinoite', 70000);
     console.log('Sabre Sinoite Results:', sabreSinoiteResults);
+
+    const shurikenDaNevasca= await fetchData('Shuriken da Nevasca', 700000);
+    console.log('Shuriken da Nevasca Results:', shurikenDaNevasca);
+
+    const tabulaIlusional = await fetchData('Tábula Ilusional Ilusional', 700000);
+    console.log('Tábula Ilusional Results:', tabulaIlusional);
+
+    const taeGooLyeonIlusional = await fetchData('Tae Goo Lyeon Ilusional', 700000);
+    console.log('Tae Goo Lyeon Ilusional Results:', taeGooLyeonIlusional);
 
     const tentaculoAfiadoResults = await fetchData('Tentáculo Afiado', 35000);
     console.log('Tentáculo Afiado Results:', tentaculoAfiadoResults);
