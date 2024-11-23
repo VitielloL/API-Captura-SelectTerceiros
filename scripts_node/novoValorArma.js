@@ -120,8 +120,8 @@ const fetchData = async (itemName, priceLimit) => {
     const laminaGemeaAzulResults = await fetchData('Lâmina Gêmea Azul', 280000);
     console.log('Lâmina Gêmea Azul Results (min 280k):', laminaGemeaAzulResults);
     
-    const laminaGemeaVermelhaResults = await fetchData('Lâmina Gêmea Vermelha', 280000);
-    console.log('Lâmina Gêmea Vermelha Results (min 280k):', laminaGemeaVermelhaResults);
+    // const laminaGemeaVermelhaResults = await fetchData('Lâmina Gêmea Vermelha', 280000);
+    // console.log('Lâmina Gêmea Vermelha Results (min 280k):', laminaGemeaVermelhaResults);
     
     const lancagiganteResults = await fetchData('Lança Gigante', 280000);
     console.log('Lança Gigante Results (min 280k):', lancagiganteResults);
@@ -132,7 +132,7 @@ const fetchData = async (itemName, priceLimit) => {
     const manjubaResults = await fetchData('Manjuba', 70000);
     console.log('Manjuba Results (min 70k):', manjubaResults);
     
-    const marteloVeteranoResults = await fetchData('Martelo Veterano', 70000);
+    const marteloVeteranoResults = await fetchData('Martelo Vet', 70000);
     console.log('Martelo Veterano Results (min 70k):', marteloVeteranoResults);
     
     const microfoneFloralIguResults = await fetchData('Microfone Floral de Igu', 70000);
@@ -147,10 +147,11 @@ const fetchData = async (itemName, priceLimit) => {
     const sabreSinoiteResults = await fetchData('Sabre Sinoite', 70000);
     console.log('Sabre Sinoite Results (min 70k):', sabreSinoiteResults);
     
-    const shurikenDaNevasca = await fetchData('Shuriken da Nevasca', 700000);
-    console.log('Shuriken da Nevasca Results (min 700k):', shurikenDaNevasca);
+    // Não é um item que troca por moeda 
+    // const shurikenDaNevasca = await fetchData('Shuriken da Nevasca', 700000);
+    // console.log('Shuriken da Nevasca Results (min 700k):', shurikenDaNevasca);
     
-    const tabulaIlusional = await fetchData('Tabula Ilusional', 700000);
+    const tabulaIlusional = await fetchData('Tabula', 700000);
     console.log('Tabula Ilusional Results (min 700k):', tabulaIlusional);
     
     const taeGooLyeonIlusional = await fetchData('Tae Goo Lyeon Ilusional', 700000);
